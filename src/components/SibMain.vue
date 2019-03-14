@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <v-app light>
-            <v-toolbar class="white">
-                <v-toolbar-title v-text="title"></v-toolbar-title>
-            </v-toolbar>
+            <!--<v-toolbar class="white">-->
+                <!--<v-toolbar-title v-text="title"></v-toolbar-title>-->
+            <!--</v-toolbar>-->
             <v-content>
                 <section>
                     <v-parallax src="http://images.chistoprudov.ru/lj/city/msk_zaryadie/00.jpg" height="600">
@@ -13,15 +13,15 @@
                                 justify-center
                                 class="white--text"
                         >
-                            <h1 class="white--text mb-5 display-4 text-xs-center">ЛИДЕРЫ В ОБЛАСТИ КАЧЕСТВЕННОГО СТРОИТЕЛЬСТВА</h1>
-                            <v-btn
-                                    class="blue lighten-2 mt-5"
-                                    dark
-                                    large
-                                    href="/pre-made-themes"
-                            >
-                                Get Started
-                            </v-btn>
+                            <h1 class="white--text mb-5 display-4 text-xs-center">ЛИДЕРЫ В ОБЛАСТИ<br> КАЧЕСТВЕННОГО<br> СТРОИТЕЛЬСТВА</h1>
+                            <!--<v-btn-->
+                                    <!--class="blue lighten-2 mt-5"-->
+                                    <!--dark-->
+                                    <!--large-->
+                                    <!--href="/pre-made-themes"-->
+                            <!--&gt;-->
+                                <!--Get Started-->
+                            <!--</v-btn>-->
                         </v-layout>
                     </v-parallax>
                     <v-layout
@@ -32,7 +32,7 @@
                     >
                         <v-flex xs12 sm4 class="my-3">
                             <div class="text-xs-center">
-                                <h2 class="headline">Услуги</h2>
+                                <h1 class="headline">УСЛУГИ</h1>
                             </div>
                         </v-flex>
                         <v-flex xs12>
@@ -42,7 +42,7 @@
                                         <v-card class="elevation-0 transparent">
                                             <v-card-text class="text-xs-center">
                                                 <v-img
-                                                        src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+                                                        src="https://st3.depositphotos.com/3591429/12974/i/950/depositphotos_129747972-stock-photo-architect-planning-construction-on-blueprint.jpg"
                                                         aspect-ratio="2.75"
                                                 ></v-img>
                                             </v-card-text>
@@ -70,7 +70,7 @@
                                         <v-card class="elevation-0 transparent">
                                             <v-card-text class="text-xs-center">
                                                 <v-img
-                                                        src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+                                                        src="http://st-rez.ru/wp-content/uploads/2018/06/1-1-21-690x465.jpg"
                                                         aspect-ratio="2.75"
                                                 ></v-img>
                                             </v-card-text>
@@ -97,7 +97,7 @@
                                         <v-card class="elevation-0 transparent">
                                             <v-card-text class="text-xs-center">
                                                 <v-img
-                                                        src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+                                                        src="http://www.project-blog.ru/project-blog.ru/wp-content/uploads//2016/06/399493_copy-604x270.png"
                                                         aspect-ratio="2.75"
                                                 ></v-img>
                                             </v-card-text>
@@ -160,7 +160,26 @@
                             <v-container fill-height>
                                 <v-layout align-center>
                                     <v-flex text-xs-center>
-                                        <h3 class="display-3">Gradient</h3>
+                                        <h3 class="display-3">
+                                            <v-layout  justify-center row fill-height>
+                                                <v-flex xs3>
+                                                    <h1 class="white--text mb-5 display-4 text-xs-center">2010</h1>
+                                                    <p mb-5 display-4 text-xs-center>Год основания</p>
+                                                </v-flex>
+                                                <v-flex xs3>
+                                                    <h1 class="white--text mb-5 display-4 text-xs-center">27</h1>
+                                                    <p mb-5 display-4 text-xs-center>Завершенных проектов</p>
+                                                </v-flex>
+                                                <v-flex xs3>
+                                                    <h1 class="white--text mb-5 display-4 text-xs-center">108</h1>
+                                                    <p mb-5 display-4 text-xs-center>Строительных подрядов</p>
+                                                </v-flex>
+                                                <v-flex xs3>
+                                                    <h1 class="white--text mb-5 display-4 text-xs-center">11</h1>
+                                                    <p mb-5 display-4 text-xs-center>Полученных наград</p>
+                                                </v-flex>
+                                            </v-layout>
+                                        </h3>
                                     </v-flex>
                                 </v-layout>
                             </v-container>
@@ -171,6 +190,9 @@
                 <section>
                     <v-container grid-list-xl>
                         <v-layout row wrap justify-center class="my-5">
+                            <v-flex  xs12>
+                                <yundex-map/>
+                            </v-flex>
                             <v-flex xs12 sm4>
                                 <v-card class="elevation-0 transparent">
                                     <v-card-title primary-title class="layout justify-center">
@@ -208,7 +230,7 @@
                                     <v-textarea
                                             name="input-7-1"
                                             label="Default style"
-                                            value="The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through."
+                                            value=""
                                             hint="Hint text"
                                     ></v-textarea>
                                     <v-btn @click="submit">Отправить</v-btn>
@@ -247,18 +269,18 @@
                     </v-container>
                 </section>
 
-                <v-footer class="blue darken-2">
-                    <v-layout row wrap align-center>
-                        <v-flex xs12>
-                            <div class="white--text ml-3">
-                                Made with
-                                <v-icon class="red--text">favorite</v-icon>
-                                by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-                                and <a class="white--text" href="https://github.com/vwxyzjn">Costa Huang</a>
-                            </div>
-                        </v-flex>
-                    </v-layout>
-                </v-footer>
+                <!--<v-footer class="blue darken-2">-->
+                    <!--<v-layout row wrap align-center>-->
+                        <!--<v-flex xs12>-->
+                            <!--<div class="white&#45;&#45;text ml-3">-->
+                                <!--Made with-->
+                                <!--<v-icon class="red&#45;&#45;text">favorite</v-icon>-->
+                                <!--by <a class="white&#45;&#45;text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>-->
+                                <!--and <a class="white&#45;&#45;text" href="https://github.com/vwxyzjn">Costa Huang</a>-->
+                            <!--</div>-->
+                        <!--</v-flex>-->
+                    <!--</v-layout>-->
+                <!--</v-footer>-->
             </v-content>
         </v-app>
     </div>
@@ -266,12 +288,13 @@
 
 <script>
     import SibHeader from "./SibHeader";
+    import YundexMap from "./YundexMap";
 
     export default {
         name: "SibMain",
-        components: {SibHeader},
+        components: {YundexMap, SibHeader},
         data: () => ({
-            gradient: 'to top, orange, white'
+            gradient: 'to top, orange 72%, white'
         }),
     }
 </script>
