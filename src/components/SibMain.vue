@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <v-app light>
-            <!--<v-toolbar class="white">-->
-                <!--<v-toolbar-title v-text="title"></v-toolbar-title>-->
-            <!--</v-toolbar>-->
+            <v-toolbar class="white">
+                <v-toolbar-title v-text="title"></v-toolbar-title>
+            </v-toolbar>
             <v-content>
                 <section>
                     <v-parallax src="http://images.chistoprudov.ru/lj/city/msk_zaryadie/00.jpg" height="600">
@@ -14,14 +14,14 @@
                                 class="white--text"
                         >
                             <h1 class="white--text mb-5 display-4 text-xs-center">ЛИДЕРЫ В ОБЛАСТИ<br> КАЧЕСТВЕННОГО<br> СТРОИТЕЛЬСТВА</h1>
-                            <!--<v-btn-->
-                                    <!--class="blue lighten-2 mt-5"-->
-                                    <!--dark-->
-                                    <!--large-->
-                                    <!--href="/pre-made-themes"-->
-                            <!--&gt;-->
-                                <!--Get Started-->
-                            <!--</v-btn>-->
+                            <v-btn
+                                    class="blue lighten-2 mt-5"
+                                    dark
+                                    large
+                                    href="/pre-made-themes"
+                            >
+                                Get Started
+                            </v-btn>
                         </v-layout>
                     </v-parallax>
                     <v-layout
@@ -190,8 +190,8 @@
                 <section>
                     <v-container grid-list-xl>
                         <v-layout row wrap justify-center class="my-5">
-                            <v-flex  xs12>
-                                <yundex-map/>
+                            <v-flex d-flex xs12>
+                                <YundexMap/>
                             </v-flex>
                             <v-flex xs12 sm4>
                                 <v-card class="elevation-0 transparent">
@@ -269,18 +269,18 @@
                     </v-container>
                 </section>
 
-                <!--<v-footer class="blue darken-2">-->
-                    <!--<v-layout row wrap align-center>-->
-                        <!--<v-flex xs12>-->
-                            <!--<div class="white&#45;&#45;text ml-3">-->
-                                <!--Made with-->
-                                <!--<v-icon class="red&#45;&#45;text">favorite</v-icon>-->
-                                <!--by <a class="white&#45;&#45;text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>-->
-                                <!--and <a class="white&#45;&#45;text" href="https://github.com/vwxyzjn">Costa Huang</a>-->
-                            <!--</div>-->
-                        <!--</v-flex>-->
-                    <!--</v-layout>-->
-                <!--</v-footer>-->
+                <v-footer class="blue darken-2">
+                    <v-layout row wrap align-center>
+                        <v-flex xs12>
+                            <div class="white--text ml-3">
+                                Made with
+                                <v-icon class="red--text">favorite</v-icon>
+                                by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
+                                and <a class="white--text" href="https://github.com/vwxyzjn">Costa Huang</a>
+                            </div>
+                        </v-flex>
+                    </v-layout>
+                </v-footer>
             </v-content>
         </v-app>
     </div>
@@ -289,10 +289,9 @@
 <script>
     import SibHeader from "./SibHeader";
     import YundexMap from "./YundexMap";
-
     export default {
         name: "SibMain",
-        components: {YundexMap, SibHeader},
+        components: {SibHeader,YundexMap},
         data: () => ({
             gradient: 'to top, orange 72%, white'
         }),
