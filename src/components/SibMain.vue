@@ -189,19 +189,19 @@
                                     <v-flex text-xs-center>
                                         <h3 class="display-3">
                                             <v-layout justify-center row fill-height>
-                                                <v-flex xs3>
+                                                <v-flex xs12 md4>
                                                     <h1 class="white--text mb-5 display-4 text-xs-center">2010</h1>
                                                     <p mb-5 display-4 text-xs-center>Год основания</p>
                                                 </v-flex>
-                                                <v-flex xs3>
+                                                <v-flex xs12 md4>
                                                     <h1 class="white--text mb-5 display-4 text-xs-center">27</h1>
                                                     <p mb-5 display-4 text-xs-center>Завершенных проектов</p>
                                                 </v-flex>
-                                                <v-flex xs3>
+                                                <v-flex xs12 md4>
                                                     <h1 class="white--text mb-5 display-4 text-xs-center">108</h1>
                                                     <p mb-5 display-4 text-xs-center>Строительных подрядов</p>
                                                 </v-flex>
-                                                <v-flex xs3>
+                                                <v-flex xs12 md4>
                                                     <h1 class="white--text mb-5 display-4 text-xs-center">11</h1>
                                                     <p mb-5 display-4 text-xs-center>Полученных наград</p>
                                                 </v-flex>
@@ -221,11 +221,11 @@
                                     <h1 class="headline">ОБЪЕКТЫ</h1>
                                 </div>
                             </v-flex>
-                            <v-flex xs12>
+                            <!--<v-flex xs12>-->
                                 <v-carousel hide-delimiters :cycle="false" height="auto" light>
                                     <v-carousel-item
                                     >
-                                        <v-container grid-list-xl>
+                                        <!--<v-container grid-list-xl>-->
                                             <v-layout row wrap>
                                                 <v-flex xs12 md4>
                                                     <v-hover>
@@ -331,13 +331,13 @@
                                                     </v-hover>
                                                 </v-flex>
                                             </v-layout>
-                                        </v-container>
+                                        <!--</v-container>-->
 
 
                                     </v-carousel-item>
                                     <v-carousel-item
                                     >
-                                        <v-container grid-list-xl>
+                                        <!--<v-container grid-list-xl>-->
                                             <v-layout row wrap>
                                                 <v-flex xs12 md6>
                                                     <v-hover>
@@ -407,11 +407,11 @@
                                                     </v-hover>
                                                 </v-flex>
                                             </v-layout>
-                                        </v-container>
+                                        <!--</v-container>-->
 
                                     </v-carousel-item>
                                 </v-carousel>
-                            </v-flex>
+                            <!--</v-flex>-->
                         </v-layout>
                     </v-container>
                 </section>
@@ -419,7 +419,7 @@
                         <v-container grid-list-xl>
                             <v-flex xs12 class="my-3">
                                 <div class="text-xs-center">
-                                    <h1 class="headline">УСЛУГИ</h1>
+                                    <h1 class="headline">КЛИЕНТЫ</h1>
                                 </div>
                             </v-flex>
                             <v-layout>
@@ -456,7 +456,7 @@
                         <v-flex d-flex xs12>
                             <YundexMap/>
                         </v-flex>
-                        <v-flex xs12 sm4>
+                        <v-flex xs12 md6>
                             <v-card class="elevation-0 transparent">
                                 <v-card-title primary-title class="layout justify-center">
                                     <div class="headline">Центральный офис</div>
@@ -500,7 +500,7 @@
                                 <v-btn @click="submit">Отправить</v-btn>
                             </form>
                         </v-flex>
-                        <v-flex xs12 sm4 offset-sm1>
+                        <v-flex xs12 md6>
                             <v-card class="elevation-0 transparent">
                                 <v-card-title primary-title class="layout justify-center">
                                     <div class="headline">Центральный офис</div>
@@ -559,9 +559,9 @@
 
 <style>
     #inspire {
-        background-image: url('https://thumbs.gfycat.com/DelayedHatefulEquine-small.gif');
+        /*background-image: url('https://thumbs.gfycat.com/DelayedHatefulEquine-small.gif');*/
         /*background-color: gray;*/
-        background-color: #c0ca33;
+        /*background-color: #c0ca33;*/
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
