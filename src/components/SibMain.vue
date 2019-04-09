@@ -2,6 +2,21 @@
     <div id="app">
         <v-app light>
             <v-content>
+                <v-toolbar>
+                    <v-toolbar-side-icon></v-toolbar-side-icon>
+                    <!--<v-toolbar-title>-->
+                        <v-img
+                                aspect-ratio="2.75"
+                            :src="host_name_img+'logo.jpg'"
+                    ></v-img>
+                    <!--</v-toolbar-title>-->
+                    <v-spacer></v-spacer>
+                    <v-toolbar-items class="hidden-sm-and-down">
+                        <v-btn flat>Link One</v-btn>
+                        <v-btn flat>Link Two</v-btn>
+                        <v-btn flat>Link Three</v-btn>
+                    </v-toolbar-items>
+                </v-toolbar>
                 <v-dialog
                         v-model="flag"
                         fullscreen
@@ -526,7 +541,7 @@
                                 <v-text-field
                                         v-model="name"
                                         :error-messages="nameErrors"
-                                        label="Name"
+                                        label="Имя"
                                         required
                                         @input="$v.name.$touch()"
                                         @blur="$v.name.$touch()"
@@ -542,14 +557,14 @@
                                 <v-text-field
                                         v-model="subject"
                                         :error-messages="emailErrors"
-                                        label="subject"
+                                        label="Тема"
                                         required
                                         @input="$v.email.$touch()"
                                         @blur="$v.email.$touch()"
                                 ></v-text-field>
                                 <v-textarea
                                         name="input-7-1"
-                                        label="Default style"
+                                        label="Комментарий"
                                         value=""
                                         hint="Hint text"
                                 ></v-textarea>
